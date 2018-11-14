@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3958E933A51A70797C11A68E /* Pods_TabBarsReloj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539FB0CF4313DCF133E35ED7 /* Pods_TabBarsReloj.framework */; };
 		DD2691C92192F32700627A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2691C82192F32700627A77 /* AppDelegate.swift */; };
 		DD2691D02192F32A00627A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2691CF2192F32A00627A77 /* Assets.xcassets */; };
 		DD2691D32192F32A00627A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2691D12192F32A00627A77 /* LaunchScreen.storyboard */; };
@@ -20,9 +21,12 @@
 		DD2691EE2192F79E00627A77 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2691EC2192F79E00627A77 /* AlarmViewController.xib */; };
 		DD2691F12192F7B700627A77 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2691EF2192F7B700627A77 /* WorldClockViewController.swift */; };
 		DD2691F22192F7B700627A77 /* WorldClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2691F02192F7B700627A77 /* WorldClockViewController.xib */; };
+		DD26921621930E8A00627A77 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26921521930E8A00627A77 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470DC11DEAD03150D533F265 /* Pods-TabBarsReloj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarsReloj.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarsReloj/Pods-TabBarsReloj.release.xcconfig"; sourceTree = "<group>"; };
+		539FB0CF4313DCF133E35ED7 /* Pods_TabBarsReloj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabBarsReloj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2691C52192F32700627A77 /* TabBarsReloj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarsReloj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2691C82192F32700627A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2691CF2192F32A00627A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		DD2691EC2192F79E00627A77 /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
 		DD2691EF2192F7B700627A77 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
 		DD2691F02192F7B700627A77 /* WorldClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldClockViewController.xib; sourceTree = "<group>"; };
+		DD26921521930E8A00627A77 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F1C8DD59DFAF228060D60229 /* Pods-TabBarsReloj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarsReloj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarsReloj/Pods-TabBarsReloj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3958E933A51A70797C11A68E /* Pods_TabBarsReloj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54020B7DD8BBE608168B246B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8DD59DFAF228060D60229 /* Pods-TabBarsReloj.debug.xcconfig */,
+				470DC11DEAD03150D533F265 /* Pods-TabBarsReloj.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60A4FE67573F9750172733A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				539FB0CF4313DCF133E35ED7 /* Pods_TabBarsReloj.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD2691BC2192F32700627A77 = {
 			isa = PBXGroup;
 			children = (
 				DD2691C72192F32700627A77 /* TabBarsReloj */,
 				DD2691C62192F32700627A77 /* Products */,
+				54020B7DD8BBE608168B246B /* Pods */,
+				60A4FE67573F9750172733A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +96,7 @@
 		DD2691C72192F32700627A77 /* TabBarsReloj */ = {
 			isa = PBXGroup;
 			children = (
+				DD26921421930E6200627A77 /* Models */,
 				DD2691DE2192F72600627A77 /* TimerViewController */,
 				DD2691DD2192F71E00627A77 /* StopwatchViewController */,
 				DD2691DC2192F71200627A77 /* BedtimeViewController */,
@@ -128,6 +155,14 @@
 			path = TimerViewController;
 			sourceTree = "<group>";
 		};
+		DD26921421930E6200627A77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD26921521930E8A00627A77 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD2691D72192F32A00627A77 /* Build configuration list for PBXNativeTarget "TabBarsReloj" */;
 			buildPhases = (
+				502CA05ACD52E2A35F327049 /* [CP] Check Pods Manifest.lock */,
 				DD2691C12192F32700627A77 /* Sources */,
 				DD2691C22192F32700627A77 /* Frameworks */,
 				DD2691C32192F32700627A77 /* Resources */,
+				093791FF026E05316944A0F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +235,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		093791FF026E05316944A0F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TabBarsReloj/Pods-TabBarsReloj-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabBarsReloj/Pods-TabBarsReloj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502CA05ACD52E2A35F327049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabBarsReloj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD2691C12192F32700627A77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,6 +292,7 @@
 				DD2691E52192F77E00627A77 /* StopwatchViewController.swift in Sources */,
 				DD2691E12192F76500627A77 /* TimerViewController.swift in Sources */,
 				DD2691C92192F32700627A77 /* AppDelegate.swift in Sources */,
+				DD26921621930E8A00627A77 /* Post.swift in Sources */,
 				DD2691E92192F78E00627A77 /* BedtimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +427,7 @@
 		};
 		DD2691D82192F32A00627A77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C8DD59DFAF228060D60229 /* Pods-TabBarsReloj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +445,7 @@
 		};
 		DD2691D92192F32A00627A77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470DC11DEAD03150D533F265 /* Pods-TabBarsReloj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
